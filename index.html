@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Hung Pham (Phạm Hùng) - International Economics student at Foreign Trade University (FTU) with experience in logistics and a passion for AI tools.">
+  <meta name="keywords" content="Hung Pham, Pham Hung, Foreign Trade University, FTU, International Economics, Logistics, VinFast, Portfolio">
+  <meta name="author" content="Hung Pham">
+  <meta name="theme-color" content="#0b0d13">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Hung Pham | Personal Portfolio">
+  <meta property="og:description" content="International Economics student at Foreign Trade University (FTU) with logistics experience and AI enthusiasm.">
+  <meta property="og:type" content="website">
+
+  <title>Hung Pham | Personal Portfolio</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar-header" id="header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="nav-logo" aria-label="Hung Pham Home">
+        <span class="logo-badge">HP</span>
+        <span class="logo-text">Hung Pham</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#exploring" class="nav-link">Exploring</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section (Immediate Background Load) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <div class="hero-status-tag">
+            <span class="status-dot"></span>
+            <span>Available for internships & junior opportunities</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="hero-name-gradient">Phạm Hùng</span>
+          </h1>
+
+          <div class="hero-typing-wrapper">
+            <span class="typing-prefix">I am an&nbsp;</span>
+            <span class="typing-text" id="typing-text">International Economics student</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-tagline">
+            International Economics student • Logistics experience • AI enthusiast
+          </p>
+
+          <p class="hero-description">
+            Third-year student at Foreign Trade University (FTU) combining analytical economics training with real-world logistics documentation and sales support experience.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get in touch</span>
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#experience" class="btn btn-secondary">
+              <span>View experience</span>
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-meta-items">
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Hanoi, Vietnam (from Hai Phong)</span>
+            </div>
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Foreign Trade University (FTU)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Avatar -->
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-circle">
+              <span class="avatar-initials">HP</span>
+            </div>
+            <div class="avatar-badge-tag">
+              <span class="tag-icon">🎓</span>
+              <span>Year 3 @ FTU Hanoi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (Lazy Background) -->
+    <section class="section about-section lazy-section-bg" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">About Me</span>
+          <h2 class="section-title">Background & Journey</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Card -->
+          <div class="about-narrative-card card reveal">
+            <h3 class="card-subtitle">My Story & Academic Focus</h3>
+            <p class="about-text">
+              I am currently a third-year university student majoring in <strong>International Economics</strong> at <strong>Foreign Trade University (FTU)</strong> in Vietnam. Originally from the coastal port city of <strong>Hai Phong</strong>, I relocated to <strong>Hanoi</strong> to pursue my higher education and broaden my perspectives.
+            </p>
+            <p class="about-text">
+              Growing up in Hai Phong gave me an early curiosity about trade, freight, and global commerce. At FTU, I have been deepening my understanding of international trade mechanisms, economic policies, and supply chain operations. Alongside my academic coursework, I have actively taken on practical roles in logistics and sales to understand how real-world commercial operations and documentation work on the ground.
+            </p>
+            <p class="about-text">
+              I approach every responsibility with reliability, careful attention to detail, and a sincere desire to learn from mentors and colleagues.
+            </p>
+
+            <div class="quick-facts-row">
+              <div class="quick-fact">
+                <span class="fact-label">University</span>
+                <span class="fact-value">Foreign Trade University (FTU)</span>
+              </div>
+              <div class="quick-fact">
+                <span class="fact-label">Major</span>
+                <span class="fact-value">International Economics</span>
+              </div>
+              <div class="quick-fact">
+                <span class="fact-label">Hometown</span>
+                <span class="fact-value">Hai Phong</span>
+              </div>
+              <div class="quick-fact">
+                <span class="fact-label">Current City</span>
+                <span class="fact-value">Hanoi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beyond Studies / Interests Column -->
+          <div class="about-interests-wrapper reveal reveal-delay-1">
+            <h3 class="interests-title">Beyond Studies</h3>
+            <p class="interests-intro">How I unwind and stay refreshed outside of class and work:</p>
+
+            <div class="interest-cards-list">
+              <!-- Interest 1: Gaming -->
+              <div class="interest-card">
+                <div class="interest-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                    <path d="M6 12h4m-2-2v4"></path>
+                    <line x1="15" y1="11" x2="15.01" y2="11"></line>
+                    <line x1="18" y1="13" x2="18.01" y2="13"></line>
+                  </svg>
+                </div>
+                <div class="interest-info">
+                  <h4 class="interest-name">Gaming</h4>
+                  <p class="interest-desc">Enjoy exploring strategic and cooperative games that challenge problem-solving and provide relaxing downtime.</p>
+                </div>
+              </div>
+
+              <!-- Interest 2: Reading -->
+              <div class="interest-card">
+                <div class="interest-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div class="interest-info">
+                  <h4 class="interest-name">Reading Books</h4>
+                  <p class="interest-desc">Appreciate reading non-fiction and trade literature to discover fresh ideas and broaden general knowledge.</p>
+                </div>
+              </div>
+
+              <!-- Interest 3: Walking -->
+              <div class="interest-card">
+                <div class="interest-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 4a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path>
+                    <path d="M7 21l3-7 3 2 2 5"></path>
+                    <path d="M11 11l3-3 4 2"></path>
+                    <path d="M6 12l4-2 3 4-4 4"></path>
+                  </svg>
+                </div>
+                <div class="interest-info">
+                  <h4 class="interest-name">Taking Long Walks</h4>
+                  <p class="interest-desc">Like going on peaceful evening walks around Hanoi to clear my mind, reflect, and stay active.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section (Lazy Background) -->
+    <section class="section skills-section lazy-section-bg" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Capabilities</span>
+          <h2 class="section-title">Skills & Knowledge</h2>
+          <p class="section-subtitle">Practical tools and foundational proficiencies applied throughout my academic coursework and operational work.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: English -->
+          <div class="skill-card card reveal">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">English</h3>
+                <span class="skill-level-badge">Basic / Working Proficiency</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Capable of reading academic materials, reviewing shipping documents, and handling standard workplace communication and correspondence.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-subtag">Reading & Writing</span>
+              <span class="skill-subtag">Document Comprehension</span>
+              <span class="skill-subtag">Email Communication</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Microsoft Excel -->
+          <div class="skill-card card reveal reveal-delay-1">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Microsoft Excel</h3>
+                <span class="skill-level-badge">Data Organization</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Utilized for tracking shipment information, structuring operational records, standard formulas, and organizing tabular datasets.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-subtag">Formulas & Lookup</span>
+              <span class="skill-subtag">Data Tracking</span>
+              <span class="skill-subtag">Tables & Formatting</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Microsoft Word -->
+          <div class="skill-card card reveal reveal-delay-2">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Microsoft Word</h3>
+                <span class="skill-level-badge">Documentation & Reports</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Drafting clean reports, academic essays, formal business memos, and standardized administrative documents with proper layout.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-subtag">Document Formatting</span>
+              <span class="skill-subtag">Report Writing</span>
+              <span class="skill-subtag">Templates</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: AI Literacy -->
+          <div class="skill-card card reveal reveal-delay-3">
+            <div class="skill-header">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">AI Literacy</h3>
+                <span class="skill-level-badge">Modern Workflow Integration</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Knowledgeable about artificial intelligence tools and actively integrating AI assistants into daily study, research synthesis, and workflow efficiency.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-subtag">AI Study Tools</span>
+              <span class="skill-subtag">Prompting & Synthesis</span>
+              <span class="skill-subtag">Productivity Enhancement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section (Lazy Background) -->
+    <section class="section experience-section lazy-section-bg" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Work History</span>
+          <h2 class="section-title">Practical Experience</h2>
+          <p class="section-subtitle">Real-world logistics operations and customer-facing support roles (newest first).</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div class="timeline-role-info">
+                  <h3 class="timeline-role">Sales Staff</h3>
+                  <div class="timeline-company-row">
+                    <span class="timeline-company">VinFast</span>
+                    <span class="timeline-badge-tag current-badge">Current Role</span>
+                  </div>
+                </div>
+                <div class="timeline-period">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="period-icon" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>2025 – Present</span>
+                </div>
+              </div>
+
+              <ul class="timeline-responsibilities">
+                <li>
+                  <span class="bullet-icon">▸</span>
+                  <span>Worked with customers and supported the sales of services.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">▸</span>
+                  <span>Coordinated with internal teams to follow up on customer requests and inquiries.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">▸</span>
+                  <span>Learned how to communicate clearly, attentively, and professionally with clients.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div class="timeline-role-info">
+                  <h3 class="timeline-role">Documentation Staff (Docs)</h3>
+                  <div class="timeline-company-row">
+                    <span class="timeline-company">VinFast</span>
+                  </div>
+                </div>
+                <div class="timeline-period">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="period-icon" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>2024 – 2025</span>
+                </div>
+              </div>
+
+              <ul class="timeline-responsibilities">
+                <li>
+                  <span class="bullet-icon">▸</span>
+                  <span>Prepared and checked shipping and export/import paperwork diligently.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">▸</span>
+                  <span>Kept documents organized and made sure all required information was accurate.</span>
+                </li>
+                <li>
+                  <span class="bullet-icon">▸</span>
+                  <span>Followed up on shipment details with related internal and external parties.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Currently Exploring Section (Lazy Background) -->
+    <section class="section exploring-section lazy-section-bg" id="exploring">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Continuous Learning</span>
+          <h2 class="section-title">Currently Exploring</h2>
+          <p class="section-subtitle">Areas I am actively dedicating time to expand my understanding and skillset.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="exploring-grid">
+          <!-- Exploring Card 1 -->
+          <div class="exploring-card card reveal">
+            <div class="exploring-number">01</div>
+            <div class="exploring-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3 class="exploring-card-title">AI Tools for Productivity</h3>
+            <p class="exploring-card-text">
+              Exploring how emerging generative AI models and automation workflows can assist in analyzing data, streamlining research summaries, and improving daily academic study methods.
+            </p>
+            <div class="exploring-tag">Productivity & Workflows</div>
+          </div>
+
+          <!-- Exploring Card 2 -->
+          <div class="exploring-card card reveal reveal-delay-1">
+            <div class="exploring-number">02</div>
+            <div class="exploring-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16.2 7.8l-2 6.3-6.4 2 2-6.3z"></path>
+              </svg>
+            </div>
+            <h3 class="exploring-card-title">International Trade & Logistics</h3>
+            <p class="exploring-card-text">
+              Deepening my practical knowledge in supply chain coordination, freight documentation nuances, Incoterms, and customs procedures in global trade environments.
+            </p>
+            <div class="exploring-tag">Trade & Supply Chain</div>
+          </div>
+
+          <!-- Exploring Card 3 -->
+          <div class="exploring-card card reveal reveal-delay-2">
+            <div class="exploring-number">03</div>
+            <div class="exploring-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="exploring-card-title">Improving My English</h3>
+            <p class="exploring-card-text">
+              Consistently practicing professional reading, business writing, and conversation to build higher confidence for international business environments and client correspondence.
+            </p>
+            <div class="exploring-tag">Language & Communication</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Lazy Background) -->
+    <section class="section contact-section lazy-section-bg" id="contact">
+      <div class="container">
+        <div class="contact-box card reveal">
+          <div class="contact-header">
+            <span class="section-badge">Get In Touch</span>
+            <h2 class="contact-title">Let's Connect</h2>
+            <p class="contact-text">
+              I am always open to discussing internship opportunities, student projects, or learning from experienced professionals in economics and logistics. Feel free to reach out directly!
+            </p>
+          </div>
+
+          <div class="contact-email-container">
+            <div class="email-display-card">
+              <div class="email-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="email-details">
+                <span class="email-label">Direct Email</span>
+                <span class="email-address">vn11235813@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-action-buttons">
+              <a href="mailto:vn11235813@gmail.com" class="btn btn-primary btn-large">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Send me an email</span>
+              </a>
+
+              <button class="btn btn-secondary btn-large" id="copy-email-btn" aria-label="Copy email address to clipboard">
+                <svg class="icon-svg copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copy-text">Copy Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">Hung Pham</span>
+        <span class="footer-subtitle">International Economics • FTU</span>
+      </div>
+      <div class="footer-center">
+        <p class="copyright-text">© 2026 Hung Pham. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-link" aria-label="Back to top of page">
+          <span>Back to top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast for Copy Action -->
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
